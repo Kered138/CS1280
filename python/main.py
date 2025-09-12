@@ -28,6 +28,12 @@ class Person:
         self.name = name
         self.age = age
     def aging(self, years):
+        """age function
+        
+        Parameters
+        ---------
+        years, how many years you want to age
+        """
         self.age +=  years
 
 class Student(Person):
