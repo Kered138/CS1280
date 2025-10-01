@@ -14,6 +14,7 @@ clubs = {
 }
 
 isPlaying = True
+swings = 0
 
 # clubs[input("enter club name >")] = int(input("enter distance"))
 # distRem = int(input("ENTER YARDS REMAINING"))
@@ -70,9 +71,12 @@ def compare(clubs):
     for key in clubs:
         #print(clubs[key])
         tmp = abs((clubs[key] - dist))
-        if((tmp < temp) and tmp != 0):
+        if((tmp < temp) and clubs[key] != 0):
             temp = tmp
             club = key
+
+    global swings
+    swings += 1
     return club
 clear()
 print("                ________        __   _____ ")
@@ -95,7 +99,16 @@ choice = int(input("Would you like to (1) Save a new set of clubs or (2) Load ex
 if(choice == 1):
     saveClubs()
 else:
+    
     clubs = loadClubs()
+    print(f"Here are your clubs: {clubs}")
+    print(f"{'-' * 30}")
+    c2 = input("(1)Continue with these clubs or (2)Save new clubs >>>")
+    if(choice == 1):
+        saveClubs
+        
+    
+
     
 
 clear()
@@ -123,6 +136,7 @@ while isPlaying:
 clear()
 
 print("Thank you for playing")
+print(f"You swung {swings} times")
 
 
 
