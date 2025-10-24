@@ -12,7 +12,8 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
-            ]
+            ],
+            "compilerPath": "C:/TDM-GCC-64/bin/g++.exe"
         },
         {
             "name": "windows",

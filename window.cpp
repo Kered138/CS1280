@@ -1,3 +1,4 @@
+#include <WinUser.h>
 
 
 // Register the window class.

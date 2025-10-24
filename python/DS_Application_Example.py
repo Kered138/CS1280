@@ -1,6 +1,5 @@
 
 # Performs descriptive analysis on data from a CSV file using pandas.
-
 import pandas as pd
 
 def read_csv_file(filename):
